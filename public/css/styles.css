@@ -156,13 +156,13 @@
 /** */
 
 #add-form-container {
-   margin-top: 150px;
+   margin-top: 50px;
    padding-top: 30px;
 }
 
 #form-box {
-   margin-top: 80px;
-   padding: 100px 50px;
+   margin-top: 20px;
+   padding: 50px;
    box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
    border-radius: 4px;
    background-color: #FFF;
@@ -177,9 +177,8 @@
    color: #F03E3E;
    font-weight: bold;
    font-size: 24px;
-   margin-top: 150px;
+   margin-top: 10px;
    margin-bottom: 30px;
-   padding-top: 80px;
 }
 
 #add-form-container form label {
@@ -197,9 +196,135 @@
    background-color: #F03E3E;
    border: 1px solid transparent;
    border-radius: 0;
-   margin-top: 20px;
 }
 
 
+/** PAGINAS DETALHES DA VAGA  =  view */
+#job-view-container {
+   margin-top: 100px;
+}
+
+job-view-conatiner h1 {
+   margin-bottom: 30px;
+}
+
+#img-container {
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+#img-container img {
+   width: 20%;
+   border-radius: 50%;
+   border: 1px solid #212529;
+}
+
+.job-desc {
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.bold {
+   font-weight: bold;
+}
+
+.main-color {
+   color: #F03E3E;
+}
+
+.back-link {
+   border: 1px solid #F03E3E;
+   padding: 5px 10px;
+   transition: .5s;
+}
+
+.back-link:hover {
+   background-color: #F03E3E;
+   color: #FFF;
+   text-decoration: none;
+}
 
 
+/**  RESPONSIVIDADE  */
+
+@media(max-width: 481px) {
+   /** PAGINAS PRINCIPAL  =  index */
+   /* navbar  */
+   #navbarNav {
+      text-align: center;
+   }
+
+   /* home */
+   #top-container {
+      padding: 50px;
+      padding-top: 100px;
+   }
+
+   #main-title {
+      font-size: 2.2rem;
+   }
+
+   #main-subtitle {
+      font-size: 1.5rem;
+   }
+
+   #search-form {
+      padding: 0;
+   }
+
+   #jobs-container {
+      padding: 20px;
+   }
+
+   .list-group-item {
+      padding: 15px 85px;
+   }
+
+   .list-group-item h2 {
+      font-size: 1.2rem;
+      width: 80%;
+   }
+
+   .list-group-item img {
+      width: 50px;
+      height: 50px;
+      left: 15px;
+      top: calc(50% - 25px);
+   }
+
+   .new-job .new-job-label {
+      display: none;
+   }
+
+   /** PAGINAS DETALHES DA VAGA  =  view */
+   /** job view */
+
+   .back-link {
+      margin-left: 30px;
+   }
+
+   #job-view-container p {
+      font-size: 1.3rem;
+   }
+
+   .job-desc {
+      width: 80%;
+   }
+
+   /*  add view */
+
+   #form-box {
+      padding: 25px;
+   }
+
+   #form-box h2 {
+      font-size: 1rem;
+      text-align: center;
+   }
+
+   #form-box button {
+      width: 100%;
+   }
+
+}

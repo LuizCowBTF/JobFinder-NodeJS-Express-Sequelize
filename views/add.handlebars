@@ -5,7 +5,7 @@
       </div>
       <div id="form-box" class="col-md-12">
          <h2>Preencha os dados da melhor forma possível para encontrar mais rápido seu DEV!</h2>
-         <form action="">
+         <form action="/jobs/add" method="POST">
             <div class="form-group">
                <label for="title">Título</label>
                <input type="text" class="form-control" id="title" name="title" placeholder="Digite o título da vaga"
@@ -33,7 +33,7 @@
                <input type="text" class="form-control" id="salary" name="salary" placeholder="Salário oferecido..."
                   required>
             </div>
-            <input type="hidden" name="new-job" value="1">
+            <input type="hidden" id="new_job" name="new_job" value="1">
             <button type="submit" class="btn btn-primary">ENVIAR</button>
          </form>
       </div>
